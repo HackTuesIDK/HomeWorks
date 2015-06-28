@@ -1,7 +1,7 @@
 ﻿<?php
 echo '
 <a id = "change_layout" href="index.php">Класове</a>
-<a id = "change_layout" href="history.php">История - таблица</a>
+<a id = "change_layout" href="history1_2.php">История - таблица</a>
 <a id = "change_layout" href="2.php">Важни страници</a>
 <a id = "change_layout" href="colors/the_colors_from_css.html">Вижте цветовете използвани на страницата</a>
 ';

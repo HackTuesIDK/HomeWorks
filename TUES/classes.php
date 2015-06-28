@@ -29,6 +29,8 @@
 		}
 	}
 	if (isset($_GET["class"])){
+		session_start();
+		$_SESSION["class"] = $_GET["class"];
 		//echo "THE CLASS IS ".$_GET["class"];
 	}else{
 		header('Location: index.php');
@@ -55,30 +57,31 @@
 		echo '</th>';
 		echo '<tr>';
 		$used=0;
-		$result = mysql_query('SELECT time1,time2,subject,des FROM tables AS x,subs AS y,subtable AS z WHERE x.UID=y.TBID AND z.UID=y.SUBTBID AND x.chet="'.$odd.'" AND z.weekday="'.$q.'" AND classID="'.$class.'" ORDER BY (time1)');
+		$result = mysql_query('SELECT time1,time2,subject,des,y.UID FROM tables AS x,subs AS y,subtable AS z WHERE x.UID=y.TBID AND z.UID=y.SUBTBID AND x.chet="'.$odd.'" AND z.weekday="'.$q.'" AND classID="'.$class.'" ORDER BY (time1)');
 		if (!$result) {
 			echo 'Could not run query: 1' . mysql_error();
 			exit;
 		}
-		for ($i=1;$i<=10;$i++){
-			echo '<tr>';
+		for ($i=0;$i<=1;$i++){
 			while ($row = mysql_fetch_array($result)){
-				//print_r($row);
-				echo '<form name="form" action="submit_table.php" method="POST">';
-				echo '<td id = "programatatd"><input type="text" name="subject1" id="subject" value="'.$row[0].'" placeholder="Start time", size="7"></td>';
-				echo '<td id = "programatatd"><input type="text" name="subject2" id="subject" value="'.$row[1].'" placeholder="Final time", size="7"></td>';
-				echo '<td id = "programatatd2"><input type="text" name="subject3" id="subject" value="'.$row[2].'" placeholder="Subject"></td>';
-				echo '<td id = "programatatd"><input type="text" name="subject4" id="subject" value="'.$row[3].'" placeholder="info", size="2"></td>';
+				echo '<tr>';
+				echo '<form name="form" action="kill_table.php" method="POST">';
+				echo '<td id = "programatatd"><input type="text" name="subject1" id="subject" value="'.$row[0].'" placeholder="Start time", size="7" readonly></td>';
+				echo '<td id = "programatatd"><input type="text" name="subject2" id="subject" value="'.$row[1].'" placeholder="Final time", size="7" readonly></td>';
+				echo '<td id = "programatatd2"><input type="text" name="subject3" id="subject" value="'.$row[2].'" placeholder="Subject" readonly></td>';
+				echo '<td id = "programatatd"><input type="text" name="subject4" id="subject" value="'.$row[3].'" placeholder="info", size="2" readonly></td>';
 				echo '<input type="hidden" name="weekday" value="'.$q.'"></input>';
 				echo '<input type="hidden" name="class" value="'.$_GET["class"].'"></input>';
+				echo '<input type="hidden" name="unique" value="'.$row[4].'"></input>';
 				echo '<input type="hidden" name="chet" value="'.$odd.'"></input>';
-				echo '<td id = "programatatd"><input type="submit" value="Submit"></input></td>';
+				echo '<td id = "programatatd"><input type="submit" value="KILL" style="background-color:red;"></input></td>';
 				echo '</form>';
 				$used=1;
 			}
 			if($used==1){
 				$used=0;
 			}else{
+				echo '<tr>';
 				echo '<form name="form" action="submit_table.php" method="POST">';
 				echo '<td id = "programatatd"><input type="text" name="subject1" id="subject" value="" placeholder="Start time", size="7"></td>';
 				echo '<td id = "programatatd"><input type="text" name="subject2" id="subject" value="" placeholder="Final time", size="7"></td>';

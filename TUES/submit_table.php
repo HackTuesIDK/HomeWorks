@@ -1,6 +1,5 @@
 <?php
 	include "config2.php";
-	echo"hi";
 	echo $_POST['subject1'];
 	echo"\n";
 	echo $_POST['subject2'];
@@ -31,4 +30,5 @@
 			echo "YES";
 		}
 	}
+	header('Location: ' . $_SERVER['HTTP_REFERER']);
 ?>

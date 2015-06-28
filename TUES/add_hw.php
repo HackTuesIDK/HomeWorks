@@ -1,4 +1,4 @@
-<html>
+﻿<html>
 <head>
 <title>ADD HOMEWORK</title>
 <title>HomeWorks</title><link rel="stylesheet" type="text/css" href="HomeWorks.css">
@@ -12,8 +12,23 @@
 <script src="autocomplete.js"></script>
 </head>
 <body>
-<div id = "AddHw">
-	<h1>New homework</h1>
+<div id = "AddHw" style = "margin-left: 24%;
+	margin-top: 8%;
+	border:1px solid #3b4d28;
+	width:580px;
+	padding:30px;
+	background-color:#81503c;
+	border-radius: 15px;">
+	<h1 style = "margin-bottom:-10px;
+	width:560px;
+	padding: 10px;
+	border:1px solid #3b4d28;
+	font-size: 40px;
+    line-height: 40px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #dad4cf;
+	background-color:#473525;
+	font-weight: bold;">New homework</h1>
 	<table>
 	<tr>
 	<td colspan="3">
@@ -35,9 +50,10 @@
 		</td>
 	</div>
 	<td>
-	<button style="width:260px; border: 0px solid; border-radius: 0px; height:40px;margin-top:0px;" onclick="check()">SUBMIT</button>
+	<button style="width:260px; border: 0px solid; border-radius:0px; height:40px;margin-top:0px;" onclick="check()">SUBMIT</button>
 	</td>
 	</table>
+	<button style="width:260px; border: 0px solid; border-radius:0px; height:40px;margin-top:0px; background-color:orange;margin-left:3px;width:100%;" onclick="back()">BACK TO MENU</button>
 </div>
 </body>
 </html>
@@ -72,5 +88,8 @@
 		var url = "add.php?title="+title+"&des="+des+"&date="+string+"&auto="+auto;
 		window.location.href = url;
 	}
+  }
+  function back(){
+	  window.location.href = "index.php";
   }
 </script>
