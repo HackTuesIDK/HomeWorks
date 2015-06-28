@@ -1,0 +1,161 @@
+body{
+	background-color: #e3c35d;
+}
+th {
+	margin-top: 30px;
+	background-color:#CAFF42;
+	color: black;
+	font-family: Arial;
+	font-size: 16px;
+	white-space: nowrap;
+	padding:10px;
+	border:1px solid #3b4d28;
+}
+
+td {
+	border:1px solid #3b4d28;
+	text-align: left;
+	height: 50px;
+	vertical-align: top;
+	background-color: #789048;
+	color:#83a149;
+	font-family: Arial;
+	font-size: 20px;
+	padding:10px;
+}
+table{
+	table-layout:fixed;
+	border:0px solid black;
+	margin-top: 20px;
+}
+#heading_hwnim
+{
+	color: #3b4d28;
+	background-color: #C0D860;
+	white-space: nowrap;
+	padding:10px;
+	text-align: center;
+}
+#heading_hwim
+{
+	color: #3b4d28;
+	background-color: #ff2f2f;
+	white-space: nowrap;
+	padding:10px;
+	text-align: center;
+}
+#heading_hwmim
+{
+	color: #3b4d28;
+	background-color: #fdff00;
+	white-space: nowrap;
+	padding:10px;
+	text-align: center;
+}
+#heading_hw
+{
+	color: #3b4d28;
+	background-color: #87bf0b;
+	white-space: nowrap;
+	padding:10px;
+	text-align: center;
+}
+#data_hw
+{
+	background-color: #F0F0D8;
+	color: #3d6912;
+	padding:10px;
+}
+p {
+	font-family: Arial;
+	font-size: 14px;
+	color: #604848;
+}
+img {
+	margin-top: 30px;
+	opacity: 1;
+	filter: alpha(opacity=40);
+	padding:2px;
+	border:1px solid black;
+	background-color:#D7EAF6;
+}
+embed {
+	margin-left: 45%;
+}
+#bottom-text
+{
+	color: #6b7655;
+	text-align: center;
+}
+#logo
+{
+	padding:0px;
+	border:0px solid black;
+}
+#text-content
+{
+	font-family: Arial;
+	font-size: 14px;
+	color: #604848;
+	font-style: italic;
+}
+#text-content-heading
+{
+	font-family: Arial;
+	font-size: 16px;
+	color: black;
+}
+#text-date
+{
+	font-family: Arial;
+	font-size: 17px;
+	color: black;
+	background-color: #647a36;
+	padding:7px;
+}
+a:link {
+    color: white;
+}
+a:visited {
+    color: white;
+}
+a:hover {	
+    color: #A0A8AE;
+}
+a:active {
+    color: white;
+}
+#change_layout
+{
+	font-family: Arial;
+	font-size: 16px;
+	text-decoration: none;
+	background-color: #604848;
+	padding:7px;
+	
+}
+#change_layout1
+{
+	font-family: Arial;
+	font-size: 16px;
+	text-decoration: none;
+	background-color: #83907c;
+	padding:0px;
+	border:1px solid black;
+	
+}	
+#imp_pages
+{
+	font-family: Arial;
+	font-size: 16px;
+	text-decoration: none;
+	padding:2px;
+}
+#all_imp_pages
+{
+	background-color: #83907c;
+	padding:4px;
+	margin-top: 2%;
+	padding-left:15px;
+}			
+	

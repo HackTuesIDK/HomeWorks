@@ -1,0 +1,137 @@
+body{
+	background-color: #D0E0EB;
+}
+th {
+	margin-top: 30px;
+	background-color:#CAFF42;
+	color: black;
+	font-family: Arial;
+	font-size: 16px;
+	white-space: nowrap;
+	padding:10px;
+	border:1px solid #1C2F3C;
+}
+
+td {
+	border:1px solid #1C2F3C;
+	text-align: left;
+	height: 50px;
+	vertical-align: top;
+	background-color: #49708A;
+	color:#507C98;
+	font-family: Arial;
+	font-size: 20px;
+	padding:10px;
+}
+table{
+	table-layout:fixed;
+	border:0px solid black;
+	margin-top: 20px;
+}
+#heading_hw
+{
+	color: #1C2F3C;
+	background-color: #68A0C5;
+	white-space: nowrap;
+	padding:10px;
+	text-align: center;
+}
+#data_hw
+{
+	background-color: #EBF7F8;
+	color: #365365;
+	padding:10px;
+}
+p {
+	font-family: Arial;
+	font-size: 14px;
+	color: #454F56;
+}
+img {
+	margin-top: 30px;
+	opacity: 1;
+	filter: alpha(opacity=40);
+	padding:2px;
+	border:1px solid black;
+	background-color:#D7EAF6;
+}
+embed {
+	margin-left: 45%;
+}
+#bottom-text
+{
+	color: #5C666D;
+	text-align: center;
+}
+#logo
+{
+	padding:0px;
+	border:0px solid black;
+}
+#text-content
+{
+	font-family: Arial;
+	font-size: 14px;
+	color: #454F56;
+	font-style: italic;
+}
+#text-content-heading
+{
+	font-family: Arial;
+	font-size: 16px;
+	color: black;
+}
+#text-date
+{
+	font-family: Arial;
+	font-size: 17px;
+	color: black;
+	background-color: #88ABC2;
+	padding:7px;
+}
+a:link {
+    color: white;
+}
+a:visited {
+    color: white;
+}
+a:hover {	
+    color: #A0A8AE;
+}
+a:active {
+    color: white;
+}
+#change_layout
+{
+	font-family: Arial;
+	font-size: 16px;
+	text-decoration: none;
+	background-color: #454F56;
+	padding:7px;
+	
+}
+#change_layout1
+{
+	font-family: Arial;
+	font-size: 16px;
+	text-decoration: none;
+	background-color: #7C8890;
+	padding:0px;
+	border:1px solid black;
+	
+}	
+#imp_pages
+{
+	font-family: Arial;
+	font-size: 16px;
+	text-decoration: none;
+	padding:2px;
+}
+#all_imp_pages
+{
+	background-color: #7C8890;
+	padding:4px;
+	margin-top: 2%;
+	padding-left:15px;
+}			
+
